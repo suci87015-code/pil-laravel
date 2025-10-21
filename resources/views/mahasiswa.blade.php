@@ -38,7 +38,12 @@
 <div class="container">
     <h1>Ini adalah halaman mahasiswa</h1>
 
-    <table>
+    {{--
+        ROWSPAN = untuk menggabungkan baris
+        COLSPAN = untuk menggabungkan kolom
+        --}}
+
+    <table class="table table-danger table-sm table-hover table striped table-bordered text-center">
         <thead>
             <tr>
                 <th>NIM</th>
@@ -49,7 +54,25 @@
             </tr>
             <body>
                 <tr>
-                    <td></td>
+                    <td>0702231023</td>
+                    <td>Sucek</td>
+                    <td>29 Oktober 2004</td>
+                    <td>Tanjung Morawa</td>
+                    <td>Sistem Informasi</td>
+                </tr>
+                <tr>
+                    <td>0702231022</td>
+                    <td>Anggek</td>
+                    <td>19 July 2004</td>
+                    <td>Belawan</td>
+                    <td>Sistem Informasi</td>
+                </tr>
+                <tr>
+                    <td>0702231027</td>
+                    <td>Dwangga</td>
+                    <td>20 Oktober 2004</td>
+                    <td>Marelan</td>
+                    <td>Sistem Informasi</td>
                 </tr>
             </body>
         </thead>
