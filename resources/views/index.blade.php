@@ -35,7 +35,7 @@
   </div>
 </nav>
 
-<div class="container">
+<div class="container" style="margin-left: 30px">
     <h1>Ini adalah halaman Home</h1>
 </div>
 
