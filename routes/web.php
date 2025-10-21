@@ -19,3 +19,13 @@ Route::get('profile',function(){
     // return view('profile', compact('nama'));
     return view('profile')->with('nama', $nama);
 });
+
+Route::get('array',function(){
+    // Infinite Loop
+    $nilai_awal = 1;
+    while ($nilai_awal <= 100){
+        echo 'Hello Suci' . $nilai_awal . 'x<br>';
+        $nilai_awal++;
+    }
+    
+});
