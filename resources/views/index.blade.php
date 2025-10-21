@@ -35,10 +35,30 @@
   </div>
 </nav>
 
-<div class="container" style="margin-left: 30px">
+<div class="container">
     <h1>Ini adalah halaman Home</h1>
 </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    {{-- ROW = BARIS
+         COL = Kolom
+         untuk penuh satu halaman itu membutuhkan col dengan jumlah 12
+        --}}
+        <hr>
+
+    <div class="row">
+        <div class="col-sm-6">
+            <h4>My name is Sucek</h4>
+            <p style="text-align: justify">
+                <b>Sucek</b> adalah mahasiswi di salah satu perguruan tinggi negeri yang beralamat di medan.
+            </p>
+        </div>
+        <div class="col-sm-6">
+            <h4>She?</h4>
+            <p style="text-align: justify">
+                <b>She</b> adalah orang terasik yang pernah aku kenal.
+            </p>
+        </div>
+    </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
