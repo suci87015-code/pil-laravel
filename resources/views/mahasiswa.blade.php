@@ -11,7 +11,9 @@
 
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
-    <a class="navbar-brand" href="/">Laravel</a>
+    <a class="navbar-brand" href="/">
+        <img src="{{ asset ('image/logo.png') }}" alt="Logo UINSU" width="40" height="40" class="d-inline-block align-text-top">
+    </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -20,11 +22,12 @@
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="/mahasiswa">Mahasiswa</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/profile">Profile</a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="/Dropdown" id="navbarDropdown" role="button">Dropdown</a>
+
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/about">About</a>
+          <a class="nav-link" href="/Disable">Disable</a>
         </li>
       </ul>
       <form class="d-flex" role="search">
@@ -36,63 +39,49 @@
 </nav>
 
 <div class="container">
-    <h1>Ini adalah halaman mahasiswa</h1>
+    <h1>Halaman Mahasiswa</h1>
 
     <div class="row">
-        <div class="col-sm-6">
-            <h4>Tabel Mahasiswa</h4>
-             <table class="table table-danger table-sm table-hover table striped table-bordered text-center">
+        <div class="col-md-6">
+            <h4>Data Mahasiswa</h4>
+             <table class="table table-dark table-sm table-hover table striped table-bordered text-center">
         <thead>
             <tr>
+                <th>No</th>
                 <th>NIM</th>
                 <th>Nama Mahasiswa</th>
-                <th>Tanggal Lahir</th>
-                <th>Alamat</th>
-                <th>Prodi</th>
+                
             </tr>
         </thead>
             <tbody>
                 @for ($i = 0; $i < $jumlah; $i++)
                     <tr>
-                        <td>Nim</td>
-                        <td>Nama</td>
-                        <td>Tanggal Lahir</td>
-                        <td>Tanjung Morawa</td>
-                        <td>Prodi</td>
+                        <td>1</td>
+                        <td>0702231023</td>
+                        <td>Suci Ramadhani</td>
+                        
                     </tr>
                 @endfor
             </tbody>
                 </table>
         </div>
         <div class="col-sm-6"></div>
-        <h4>Form Mahasiswa</h4>
+        <h4>Form Tambah Mahasiswa</h4>
         <form action="" method="GET">
-            <div class="row">
-                <div class="col-sm-6">
-                     <label for="">NIM</label>
-                     <input type="number" name="nim" class="form-control" placeholder="Input NIM">
+            <div class="col">
+                <div class="col-md-6">
+                     <label for="Nim" class="form-label">NIM</label>
+                     <input type="number" name="nim" class="form-control" placeholder="">
                 </div>
-                <div class="col-sm-6">
-                     <label for="">Nama Mahasiswa</label>
-                     <input type="text" name="nama_mahasiswa" class="form-control" placeholder="Input Nama Mahasiswa">
+                <div class="col-md-6">
+                     <label for="nama" class="form-label">Nama Mahasiswa</label>
+                     <input type="text" name="nama_mahasiswa" class="form-control" placeholder="">
                 </div>
             </div>
-            <div class="row">
-                <div class="col-sm-6">
-                    <label for="">Tanggal Lahir</label>
-                    <input type="date" name="tanggal_lahir" class="form-control">
-                </div>
-                <div class="col-sm-6">
-                    <label for="">Prodi</label>
-                    <select name="prodi" class="form-control">
-                        <option value="">Sistem Informasi</option>
-                        <option value="">Tekhnik Informasi</option>
-                        <option value="">Sistem Informatika</option>
-                    </select>
-                </div>
+            <div class="col">
             </div>
             <div class="row mt-2">
-                <div class="col-sm-12">
+                <div class="col-sm-6">
                     <button class="btn btn-primary" style="width: 100%" type="submit">Simpan</button>
                 </div>
             </div>
