@@ -54,19 +54,14 @@
             </tr>
         </thead>
             <tbody>
-                <?php $nilai_awal = 1; ?>
-                @while ($nilai_awal , $jumlah)
-
-                <tr>
-                    <td>{{ $nim [$nilai_awal] }}</td>
-                    <td>Sucek</td>
-                    <td>29 Oktober 2004</td>
-                    <td>Tanjung Morawa</td>
-                    <td>Sistem Informasi</td>
-                </tr>
-
-                <?php $nilai_awal++ ?>
-                @endwhile
+                @for ($i = 0; $i < $jumlah; $i++)
+                    <tr>
+                        <td>{{ $nim[$i] }}</td>
+                        <td>{{ $nama[$i] }}</td>
+                        <td>Perempuan</td>
+                        <td>Tanjung Morawa</td>
+                    </tr>
+                @endfor
             </tbody>
     </table>
 </div>
