@@ -52,30 +52,22 @@
                 <th>Alamat</th>
                 <th>Prodi</th>
             </tr>
-            <body>
+        </thead>
+            <tbody>
+                <?php $nilai_awal = 1; ?>
+                @while ($nilai_awal , $jumlah)
+
                 <tr>
-                    <td>0702231023</td>
+                    <td>{{ $nim [$nilai_awal] }}</td>
                     <td>Sucek</td>
                     <td>29 Oktober 2004</td>
                     <td>Tanjung Morawa</td>
                     <td>Sistem Informasi</td>
                 </tr>
-                <tr>
-                    <td>0702231022</td>
-                    <td>Anggek</td>
-                    <td>19 July 2004</td>
-                    <td>Belawan</td>
-                    <td>Sistem Informasi</td>
-                </tr>
-                <tr>
-                    <td>0702231027</td>
-                    <td>Dwangga</td>
-                    <td>20 Oktober 2004</td>
-                    <td>Marelan</td>
-                    <td>Sistem Informasi</td>
-                </tr>
-            </body>
-        </thead>
+
+                <?php $nilai_awal++ ?>
+                @endwhile
+            </tbody>
     </table>
 </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>

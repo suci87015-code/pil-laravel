@@ -11,7 +11,9 @@ Route::get('about',function(){
 });
 
 Route::get('mahasiswa',function(){
-    return view('mahasiswa');
+    $nim = [123,456,789,291];
+    $jumlah = count($nim);
+    return view('mahasiswa',compact('nim','jumlah'));
 });
 
 Route::get('profile',function(){
@@ -20,9 +22,3 @@ Route::get('profile',function(){
     return view('profile')->with('nama', $nama);
 });
 
-Route::get('array',function(){
-    for ($i=1; $i <= 5; $i++) {
-        echo 'Hello Suci ' . $i . 'x<br>';
-    }
-    
-});
